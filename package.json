@@ -1,7 +1,8 @@
 {
-  "name": "explore_comp_lib",
+  "name": "my-custom-react-ui-library",
   "version": "0.1.0",
-  "private": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
