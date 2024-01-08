@@ -2,15 +2,16 @@ import React from "react";
 
 export interface ButtonProps {
   text: string;
-  type?: "primary" | "secondary";
   customClasses: string;
+
+  type?: "primary" | "secondary";
   onClick?: () => void;
 }
 
 export const Button: React.FC<ButtonProps> = ({
   text,
-  type = "primary",
   customClasses,
+  type = "primary",
   onClick,
 }) => {
   const buttonClasses =

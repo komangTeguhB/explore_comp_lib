@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start -p 4000",
-    "build": "react-scripts build",
+    "build": "tsc -p tsconfig.build.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
