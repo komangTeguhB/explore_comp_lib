@@ -5,11 +5,12 @@ export interface DropdownProps {
   containerClasses: string;
   buttonClasses: string;
   menuClasses: string;
+  defaultCaption?: string;
 
   onSelect: (selectedOption: string) => void;
 }
 
-export const Dropdown: React.FC<DropdownProps> = ({ options, containerClasses, buttonClasses, menuClasses, onSelect }) => {
+export const Dropdown: React.FC<DropdownProps> = ({ options, containerClasses, buttonClasses, menuClasses, defaultCaption = "Select an option", onSelect }) => {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,14 +23,14 @@ export const Dropdown: React.FC<DropdownProps> = ({ options, containerClasses, b
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
-    <div className={containerClasses}>
-      <button onClick={toggleDropdown} className={`rounded relative ${buttonClasses}`}>
-        {selectedOption || "Select an option"}
+    <div className={`relative ${containerClasses}`}>
+      <button onClick={toggleDropdown} className={`rounded absolute ${buttonClasses}`}>
+        {selectedOption || defaultCaption}
       </button>
       {isOpen && (
-        <div className={`absolute ${menuClasses}`}>
+        <div className={`absolute top-10 ${menuClasses}`}>
           {options.map((option) => (
-            <div key={option} onClick={() => handleOptionClick(option)}>
+            <div className="cursor-pointer" key={option} onClick={() => handleOptionClick(option)}>
               {option}
             </div>
           ))}
