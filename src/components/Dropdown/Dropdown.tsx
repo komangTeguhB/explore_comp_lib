@@ -5,12 +5,12 @@ export interface DropdownProps {
   containerClasses: string;
   buttonClasses: string;
   menuClasses: string;
-  defaultCaption?: string;
 
   onSelect: (selectedOption: string) => void;
+  defaultCaption?: string;
 }
 
-export const Dropdown: React.FC<DropdownProps> = ({ options, containerClasses, buttonClasses, menuClasses, defaultCaption = "Select an option", onSelect }) => {
+export const Dropdown: React.FC<DropdownProps> = ({ options, containerClasses, buttonClasses, menuClasses, onSelect, defaultCaption = "Select an option" }) => {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 

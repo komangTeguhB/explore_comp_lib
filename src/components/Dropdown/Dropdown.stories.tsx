@@ -18,6 +18,7 @@ BasicDropdown.args = {
   containerClasses: "",
   buttonClasses: "border border-gray-500 px-4 py-2",
   menuClasses: "border border-gray-900 px-4",
-  defaultCaption: "-- Please Select --",
+
   onSelect: (selectedOption) => console.log(`Selected option: ${selectedOption}`),
+  defaultCaption: "-- Please Select --",
 };
