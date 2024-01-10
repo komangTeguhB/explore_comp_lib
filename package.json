@@ -1,6 +1,6 @@
 {
   "name": "explore-react-ui-library",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "dependencies": {
@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build:tailwind": "npx tailwindcss build -i ./src/index.css -o ./lib/style.css --config ./tailwind.config.js --watch"
+    "build:tailwind": "npx tailwindcss build -i ./src/index.css -o ./lib/components/style.css --config ./tailwind.config.js --watch"
   },
   "eslintConfig": {
     "extends": [

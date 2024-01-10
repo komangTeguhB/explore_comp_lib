@@ -1,5 +1,4 @@
 import React from "react";
-import "./../../../lib/style.css";
 
 export interface ButtonProps {
   text: string;
@@ -21,10 +20,8 @@ export const Button: React.FC<ButtonProps> = ({
       : "bg-grayscale-8 hover:bg-grayscale-7 text-black";
 
   return (
-    <button className={`rounded ${buttonClasses} ${customClasses}`}
-  onClick={onClick}
->
-  {text}
-</button>
+    <button className={`rounded ${buttonClasses} ${customClasses}`} onClick={onClick}>
+      {text}
+    </button>
  );
 };

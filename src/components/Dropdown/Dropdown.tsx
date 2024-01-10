@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./../../../lib/style.css";
 
 export interface DropdownProps {
   options: string[];
