@@ -24,7 +24,7 @@ export const Dropdown: React.FC<DropdownProps> = ({ options, containerClasses, b
 
   return (
     <div className={`relative ${containerClasses}`}>
-      <button onClick={toggleDropdown} className={`rounded absolute ${buttonClasses}`}>
+      <button onClick={toggleDropdown} className={`bg-grayscale-9 rounded absolute ${buttonClasses}`}>
         {selectedOption || defaultCaption}
       </button>
       {isOpen && (

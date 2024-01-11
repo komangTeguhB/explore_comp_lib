@@ -24,7 +24,8 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build:tailwind": "npx tailwindcss build -i ./src/index.css -o ./lib/components/style.css --config ./tailwind.config.js --watch"
+    "build:tailwind": "npx tailwindcss build -i ./src/index.css -o ./lib/components/style.css --config ./tailwind.config.js --watch",
+    "chromatic": "chromatic"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +57,7 @@
     "@storybook/react": "^7.6.7",
     "@storybook/react-webpack5": "^7.6.7",
     "@storybook/test": "^7.6.7",
+    "chromatic": "^10.2.1",
     "eslint-plugin-storybook": "^0.6.15",
     "prop-types": "^15.8.1",
     "storybook": "^7.6.7",
