@@ -1,6 +1,6 @@
 {
   "name": "explore-react-ui-library",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "dependencies": {
@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.7",
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/addon-interactions": "^7.6.7",
     "@storybook/addon-links": "^7.6.7",
